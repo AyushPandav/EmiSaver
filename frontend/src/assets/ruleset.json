@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "3.0.0",
+  "description": "Shared canonical ruleset for EmiSaver on-device TS engine and Python backend fallback",
+  "lenders": [
+    {
+      "canonical_name": "LazyPay",
+      "sender_patterns": ["LAZYPY", "LAZYPAY", "LZPAY", "PAYUFN"],
+      "keywords": ["lazypay", "payu finance", "lazy pay", "लेजीपे", "लेज़ीपे"]
+    },
+    {
+      "canonical_name": "KreditBee",
+      "sender_patterns": ["KRDTBI", "KRDBEE", "KREDTB", "KREDITBEE", "KBEE"],
+      "keywords": ["kreditbee", "krazybee", "kredit bee", "क्रेडिटबी", "क्रेडिट बी", "கிரெடிட்பீ"]
+    },
+    {
+      "canonical_name": "Navi",
+      "sender_patterns": ["NAVITM", "NAVIFN", "NAVI", "NAVILN"],
+      "keywords": ["navi", "navi finserv", "नवी", "நவி"]
+    },
+    {
+      "canonical_name": "Simpl",
+      "sender_patterns": ["SIMPL", "GETSMP", "SMPL"],
+      "keywords": ["simpl", "getsimpl", "सिम्पल", "சிம்பிள்"]
+    },
+    {
+      "canonical_name": "Slice",
+      "sender_patterns": ["SLICEC", "SLICE", "SLICEN"],
+      "keywords": ["slice", "slice card", "स्लाइस", "ஸ்லைஸ்"]
+    },
+    {
+      "canonical_name": "CASHe",
+      "sender_patterns": ["CASHE", "CSHEIN"],
+      "keywords": ["cashe", "bhanix finance", "कॅशे"]
+    },
+    {
+      "canonical_name": "MoneyTap",
+      "sender_patterns": ["MNYTAP", "MONEYTAP"],
+      "keywords": ["moneytap", "money tap", "मनीटॅप"]
+    },
+    {
+      "canonical_name": "Bajaj Finserv",
+      "sender_patterns": ["BAJAJF", "BAJAJ", "BFINSV", "BAJAJFIN"],
+      "keywords": ["bajaj finserv", "bajaj finance", "बजाज", "பஜாஜ்"]
+    },
+    {
+      "canonical_name": "ZestMoney",
+      "sender_patterns": ["ZESTMN", "ZEST", "ZESTMY"],
+      "keywords": ["zestmoney", "zest money", "ज़ेस्टमनी"]
+    }
+  ],
+  "amount_patterns": {
+    "currency_symbols": ["₹", "Rs\\.?", "INR", "रू", "ரூ", "টাকা"],
+    "indic_digit_map": {
+      "०": "0", "१": "1", "२": "2", "३": "3", "४": "4", "५": "5", "६": "6", "७": "7", "८": "8", "९": "9",
+      "০": "0", "১": "1", "২": "2", "৩": "3", "৪": "4", "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9",
+      "௦": "0", "௧": "1", "௨": "2", "௩": "3", "௪": "4", "௫": "5", "௬": "6", "௭": "7", "௮": "8", "௯": "9"
+    },
+    "emi_keywords": [
+      "emi", "due", "instalment", "installment", "monthly installment", "किस्त", "ईएमआई", "तവണ", "கிஸ்தி", "পরিশোধ"
+    ],
+    "disbursal_keywords": [
+      "disbursed", "loan amount", "sanctioned", "approved for", "वितरित", "स्वीकृत"
+    ]
+  },
+  "date_patterns": {
+    "indic_months": {
+      "जनवरी": 1, "फ़रवरी": 2, "फरवरी": 2, "मार्च": 3, "अप्रैल": 4, "मई": 5, "जून": 6,
+      "जुलाई": 7, "अगस्त": 8, "सितंबर": 9, "अक्टूबर": 10, "नवंबर": 11, "दिसंबर": 12,
+      "ஜனவரி": 1, "பிப்ரவரி": 2, "மார்ச்": 3, "ஏப்ரல்": 4, "மே": 5, "ஜூன்": 6,
+      "ஜூலை": 7, "ஆகஸ்ட்": 8, "செப்டம்பர்": 9, "அக்டோபர்": 10, "நவம்பர்": 11, "டிசம்பர்": 12,
+      "জানুয়ারি": 1, "ফেব্রুয়ারি": 2, "মার্চ": 3, "এপ্রিল": 4, "মে": 5, "জুন": 6,
+      "জুলাই": 7, "আগস্ট": 8, "সেপ্টেম্বর": 9, "অক্টোবর": 10, "নভেম্বর": 11, "ডিসেম্বর": 12
+    },
+    "english_months": {
+      "jan": 1, "january": 1, "feb": 2, "february": 2, "mar": 3, "march": 3,
+      "apr": 4, "april": 4, "may": 5, "jun": 6, "june": 6,
+      "jul": 7, "july": 7, "aug": 8, "august": 8, "sep": 9, "sept": 9, "september": 9,
+      "oct": 10, "october": 10, "nov": 11, "november": 11, "dec": 12, "december": 12
+    }
+  },
+  "classification_rules": {
+    "loan_approved": {
+      "keywords": ["loan approved", "approved", "sanctioned", "congratulations! your loan", "ऋण स्वीकृत", "स्वीकृत"],
+      "boost": 0.95
+    },
+    "emi_generated": {
+      "keywords": ["bill generated", "statement generated", "emi generated", "total due", "bill amount", "बिल जनरेट", "स्टेटमेंट"],
+      "boost": 0.92
+    },
+    "emi_reminder": {
+      "keywords": ["emi due", "due on", "payment reminder", "reminder: your emi", "due date", "किस्त देय", "याद दिलाएं"],
+      "boost": 0.94
+    },
+    "payment_confirmed": {
+      "keywords": ["received payment", "repayment received", "successfully received", "paid successfully", "भुगतान प्राप्त"],
+      "boost": 0.96
+    },
+    "overdue_notice": {
+      "keywords": ["overdue", "missed payment", "immediate payment", "penalty", "defaulter", "विलंबित", "अतिदेय"],
+      "boost": 0.95
+    }
+  },
+  "confidence_thresholds": {
+    "per_field_warning": 0.75,
+    "high_confidence": 0.85,
+    "low_confidence_fallback": 0.60
+  }
+}

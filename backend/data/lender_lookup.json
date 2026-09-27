@@ -1,0 +1,134 @@
+[
+  {
+    "canonical_name": "LazyPay",
+    "sender_patterns": ["LAZYPY", "LAZYPAY", "LZPAY"],
+    "keywords": ["lazypay", "payu finance", "lazy pay"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "KreditBee",
+    "sender_patterns": ["KRDTBI", "KRDBEE", "KREDTB", "KREDITBEE"],
+    "keywords": ["kreditbee", "krazybee", "kredit bee"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Navi",
+    "sender_patterns": ["NAVITM", "NAVIFN", "NAVI", "NAVILN"],
+    "keywords": ["navi", "navi finserv", "navi technologies"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Simpl",
+    "sender_patterns": ["SIMPL", "GETSMP", "SMPL"],
+    "keywords": ["simpl", "getsimpl", "one simpl"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "Slice",
+    "sender_patterns": ["SLICEC", "SLICE", "SLICEN"],
+    "keywords": ["slice", "slice card", "garageprenuers"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "CASHe",
+    "sender_patterns": ["CASHE", "CSHEIN"],
+    "keywords": ["cashe", "bhanix finance"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "MoneyTap",
+    "sender_patterns": ["MNYTAP", "MONEYTAP", "MYTAP"],
+    "keywords": ["moneytap", "money tap", "freo"],
+    "category": "credit_line"
+  },
+  {
+    "canonical_name": "Ring",
+    "sender_patterns": ["RINGAP", "RINGLN", "PAYRN"],
+    "keywords": ["ring app", "ring loan", "onEMI"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Kissht",
+    "sender_patterns": ["KISSHT", "KSHTLN"],
+    "keywords": ["kissht", "onemi technology"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "PaySense",
+    "sender_patterns": ["PAYSNS", "PAYSENSE"],
+    "keywords": ["paysense", "pay sense"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "TrueBalance",
+    "sender_patterns": ["TRUEBL", "TRUBLN"],
+    "keywords": ["truebalance", "true balance", "balancehero"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Fibe",
+    "sender_patterns": ["FIBE", "EARLYS"],
+    "keywords": ["fibe", "earlysalary", "early salary"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Bajaj Finserv",
+    "sender_patterns": ["BAJAJF", "BAJAJ", "BFINSV"],
+    "keywords": ["bajaj finserv", "bajaj finance", "bajaj emi"],
+    "category": "nbfc"
+  },
+  {
+    "canonical_name": "ZestMoney",
+    "sender_patterns": ["ZESTMN", "ZEST", "ZESTMY"],
+    "keywords": ["zestmoney", "zest money", "camden town"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "mPokket",
+    "sender_patterns": ["MPOKKT", "MPOKKET"],
+    "keywords": ["mpokket", "m pokket"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Home Credit",
+    "sender_patterns": ["HMCRDT", "HOMECR"],
+    "keywords": ["home credit", "homecredit"],
+    "category": "nbfc"
+  },
+  {
+    "canonical_name": "Dhani",
+    "sender_patterns": ["DHANIS", "DHANIL"],
+    "keywords": ["dhani", "indiabulls consumer"],
+    "category": "instant_loan"
+  },
+  {
+    "canonical_name": "Paytm Postpaid",
+    "sender_patterns": ["PAYTM", "PAYTML"],
+    "keywords": ["paytm postpaid", "postpaid emi", "paytm loan"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "Amazon Pay Later",
+    "sender_patterns": ["AMZPAY", "AMAZON"],
+    "keywords": ["amazon pay later", "amazon emi", "axio"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "Flipkart Pay Later",
+    "sender_patterns": ["FLPKRT", "FKTPAY"],
+    "keywords": ["flipkart pay later", "flipkart emi", "supercoins"],
+    "category": "bnpl"
+  },
+  {
+    "canonical_name": "IDFC FIRST Bank",
+    "sender_patterns": ["IDFCFB", "IDFCBN"],
+    "keywords": ["idfc first", "idfc bank", "idfc loan"],
+    "category": "bank"
+  },
+  {
+    "canonical_name": "HDFC Bank",
+    "sender_patterns": ["HDFCBK", "HDFCBN"],
+    "keywords": ["hdfc bank loan", "hdfc emi", "hdfc loan"],
+    "category": "bank"
+  }
+]

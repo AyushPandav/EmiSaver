@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "EmiSaver",
+    "slug": "emisaver",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "emisaver",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.emisaver",
+      "adaptiveIcon": {
+        "backgroundColor": "#F8FAFC"
+      },
+      "permissions": [
+        "android.permission.READ_SMS"
+      ]
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-dev-client"
+    ]
+  }
+}
